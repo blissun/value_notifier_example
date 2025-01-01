@@ -1,12 +1,14 @@
-# ValueNotifier 학습하기
+
+# ValueNotifier
+## 부제 : 상태관리 패키지(riverpod, getx:controller, ...) 를 사용하지 않고 상태관리 하는 방법
 
 Flutter에서 상태관리를 위한 `ValueNotifier` 사용법을 배워봅시다.
 
 ## ValueNotifier란?
 
-`ValueNotifier`는 Flutter에서 제공하는 간단한 상태 관리 도구입니다. 값의 변경을 감지하고 이를 구독하는 위젯들에게 알려주는 역할을 합니다.
+`ValueNotifier`는 Flutter에서 제공하는 간단한 상태 관리 도구입니다. 값의 변경을 감지하고 이를 구독하는 위젯(ValueListenableBuilder)들에게 알려주는 역할을 합니다.
 
-## ValueNotifier의 실용적 활용
+## ValueNotifier의 활용
 
 - 단일 화면 내의 위젯 상태 관리
   - 버튼의 활성화 상태
@@ -78,6 +80,6 @@ isHide.value = !isHide.value;
 
 ## 추가 학습
 
-- `ValueNotifier`와 `Stream`의 차이점 이해하기
+- TextEditingController, TextField위젯과 비교해보기
 - 여러 개의 `ValueNotifier` 조합하여 사용하기
 - 복잡한 객체에서 `ValueNotifier` 활용하기
